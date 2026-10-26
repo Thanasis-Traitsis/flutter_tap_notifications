@@ -1,4 +1,4 @@
-What Really Happens When You Tap a Push Notification in Flutter
+![Banner](https://github.com/Thanasis-Traitsis/flutter_tap_notifications/blob/main/assets/What%20Really%20Happens%20When%20You%20Tap%20a%20Push%20Notification%20in%20Flutter.png?raw=true)
 
 In my last article, we went deep into local notifications. *Really* deep. Channels, permissions, timezones, the OS scheduler... And at the very end, I made you a promise: a Part 2 about push notifications.
 
@@ -19,7 +19,7 @@ Three states. Three different paths into your app. Miss one, and that's the tap 
 
 So here's the plan. We'll go through the three scenarios one by one and point at the exact lines of code that make each tap land on the right screen. No 30-minute read this time, I promise. We won't set up Firebase from scratch or build a server that sends pushes. Just the journey from *"user taps"* to *"user sees the right screen"*.
 
-![Demo GIF](PLACEHOLDER_DEMO_GIF: tapping a push in each of the three states and landing on the right screen)
+![Let's begin](https://github.com/Thanasis-Traitsis/flutter_tap_notifications/blob/main/assets/tap_intro.gif)
 
 Let's begin.
 
@@ -67,8 +67,6 @@ Here's a confession. I was *sure* this scenario worked in ήτα.ρώ. I mean, i
 So I opened the app, went to the Socials tab, and triggered a "we're live" push from the backend.
 
 Nothing. No banner at the top of the screen. Nothing in the notification list either. The push arrived, and simply... vanished.
-
-![Nothing happens](PLACEHOLDER_GIF: the app open, a push is sent, and nothing appears)
 
 **This isn't a bug. It's the default behavior.** When your app is in the foreground, Firebase assumes *you* want to handle the message yourself, so it doesn't show anything. Instead, it hands the message to your code through `FirebaseMessaging.onMessage`, and if nobody is listening there, the message is gone.
 
@@ -361,6 +359,9 @@ If you want the whole picture in one place:
 | **Dead** | The OS | `getInitialMessage()` |
 
 **Three different doors into your app. One `handleTap` behind all of them.**
+
+So much tapping...time to tap out.
+![Tap out](https://github.com/Thanasis-Traitsis/flutter_tap_notifications/blob/main/assets/tap_out.gif)
 
 ## Conclusion
 
