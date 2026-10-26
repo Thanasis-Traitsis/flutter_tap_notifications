@@ -361,6 +361,7 @@ If you want the whole picture in one place:
 **Three different doors into your app. One `handleTap` behind all of them.**
 
 So much tapping...time to tap out.
+
 ![Tap out](https://github.com/Thanasis-Traitsis/flutter_tap_notifications/blob/main/assets/tap_out.gif)
 
 ## Conclusion
@@ -375,7 +376,7 @@ One last thing. Notification taps are one way into a specific screen, but they a
 
 If you enjoyed this article and want to stay connected, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/thanasis-traitsis/).
 
-If you'd like to dive deeper into the code and contribute to the project, visit the repository on [GitHub](PLACEHOLDER_GITHUB_REPO_LINK).
+If you'd like to dive deeper into the code and contribute to the project, visit the repository on [GitHub](https://github.com/Thanasis-Traitsis/flutter_tap_notifications).
 
 Was this guide helpful? Consider buying me a coffee!☕️ Your contribution goes a long way in fuelling future content and projects. [Buy Me a Coffee](https://www.buymeacoffee.com/thanasis_traitsis).
 
