@@ -8,7 +8,7 @@ Push notifications are a huge world. FCM, APNs, servers, tokens, payloads. Throw
 
 Have you ever tapped a notification from an app you use every day, and landed... on the home screen? Not the article. Not the new episode. Just the home screen, as if the notification never happened. You tap. The app opens. And nothing.
 
-That's exactly what I wanted to avoid while building [ήτα.ρώ](PLACEHOLDER_APP_LINK), the radio app of Iraklis Thessaloniki. The app sends a push for a few different things: a show going live, a new article, a change in the weekly schedule. And every one of those taps has to take you somewhere different.
+That's exactly what I wanted to avoid while building [ήτα.ρώ](https://ita-ro.gr/), the radio app of Iraklis Thessaloniki. The app sends a push for a few different things: a show going live, a new article, a change in the weekly schedule. And every one of those taps has to take you somewhere different.
 
 Simple, right? **Here's the thing:** a tap doesn't always arrive the same way. It depends on what your app was doing when the user pressed it:
 - **The app is open** → the user is right there, looking at it
