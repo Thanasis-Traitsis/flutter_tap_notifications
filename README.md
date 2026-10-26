@@ -1,6 +1,6 @@
 ![Banner](https://github.com/Thanasis-Traitsis/flutter_tap_notifications/blob/main/assets/What%20Really%20Happens%20When%20You%20Tap%20a%20Push%20Notification%20in%20Flutter.png?raw=true)
 
-In my last article, we went deep into local notifications. *Really* deep. Channels, permissions, timezones, the OS scheduler... And at the very end, I made you a promise: a Part 2 about push notifications.
+In my last [article](https://dev.to/thanasistraitsis/building-local-notifications-in-flutterproperly-26o7), we went deep into local notifications. *Really* deep. Channels, permissions, timezones, the OS scheduler... And at the very end, I made you a promise: a Part 2 about push notifications.
 
 Well, here we are. Sort of. 😅
 
@@ -11,9 +11,9 @@ Have you ever tapped a notification from an app you use every day, and landed...
 That's exactly what I wanted to avoid while building [ήτα.ρώ](https://ita-ro.gr/), the radio app of Iraklis Thessaloniki. The app sends a push for a few different things: a show going live, a new article, a change in the weekly schedule. And every one of those taps has to take you somewhere different.
 
 Simple, right? **Here's the thing:** a tap doesn't always arrive the same way. It depends on what your app was doing when the user pressed it:
-- **The app is open** → the user is right there, looking at it
-- **The app is in the background** → minimized, still alive in memory
-- **The app is dead** → swiped away, or killed by the OS
+- **[The app is open](#scenario-1-the-app-is-open)** → the user is right there, looking at it
+- **[The app is in the background](#scenario-2-the-app-is-in-the-background)** → minimized, still alive in memory
+- **[The app is dead](#scenario-3-the-app-is-dead)** → swiped away, or killed by the OS
 
 Three states. Three different paths into your app. Miss one, and that's the tap that drops your users on the home screen.
 
